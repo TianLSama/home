@@ -1,11 +1,10 @@
 <!--© 2026 TianLSama. All rights reserved.-->
 <!DOCTYPE html>
 <html lang="zh-CN">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msvalidate.01" content="4F6D9D618C3AC81E93BA8336DFFD932B" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>门户页面 | TianCLoud</title>
     <style>
         :root {
@@ -13,19 +12,41 @@
             --text: rgba(255,255,255,0.95);
             --shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+
+        html {
+            overflow-y: scroll; 
+        }
+        html::-webkit-scrollbar {
+            width: 0px; 
+            background: transparent; 
+        }
+        html {
+            scrollbar-width: none; 
+        }
+        html {
+            -ms-overflow-style: none; 
+        }
+
         body {
-        margin: 0;
-        min-height: 100vh;
-        background: url('https://file.tianlsama.0a0b.cn/d/storage/Private%20Cloud/image-bed/D125C10F0CA40B954D1A938513262B1B.png') no-repeat center center fixed;
-        background-size: cover;
-        font-family: 'Arial Rounded MT Bold', sans-serif;
-        padding: 5% 8%;
-        animation: fadeIn 0.8s ease-out forwards;
-    }
+            margin: 0;
+            min-height: 100vh;
+            background: url('https://file.tianlsama.0a0b.cn/d/storage/Private%20Cloud/image-bed/135214287_p0.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+            padding: 20px 3%;
+            animation: fadeIn 0.8s ease-out forwards;
+            color: var(--text);
+            overflow-x: hidden; 
+        }
+
         .content-wrapper {
             opacity: 0;
             animation: slideUp 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s forwards;
+            max-width: 1200px;
+            margin: 0;
+            padding: 20px 0;
         }
+
         .main-title {
             font-size: clamp(40px, 5vw, 80px);
             color: var(--text);
@@ -33,19 +54,24 @@
             line-height: 1.2;
             margin: 0 0 15px;
         }
+
         .sub-title {
             font-size: clamp(16px, 1.5vw, 24px);
             color: var(--text);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-            line-height: 1.6;
-            margin: 0;
+            line-height: 1.4;
+            margin: 5px 0;
+            word-wrap: break-word;
+            word-break: break-word;
         }
+
         .button-container {
             display: flex;
             gap: 30px;
             margin-top: 25px;
             flex-wrap: wrap;
         }
+
         .home-button {
             padding: 12px 35px;
             background: rgba(255,255,255,0.9);
@@ -55,45 +81,66 @@
             font-size: clamp(16px, 1.5vw, 20px);
             transition: all 0.3s ease;
             box-shadow: var(--shadow);
+            text-decoration: none;
+            display: inline-block;
+            font-family: inherit; 
         }
+
         .home-button:hover {
             background: var(--primary);
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(110, 195, 247, 0.3);
         }
+
+        footer {
+            text-align: center;
+            color: #8d8d8d; 
+            font-size: 13px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 300 !important; 
+            margin-top: 60px;
+            padding-bottom: 20px;
+            text-shadow: none !important; 
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+        }
+
         @keyframes fadeIn { to { opacity: 1; } }
         @keyframes slideUp {
             from { opacity: 0; transform: translateY(50px); }
             to { opacity: 1; transform: none; }
         }
+
         @media (max-width: 768px) {
-            body { padding: 15% 6%; }
+            body { padding: 0 4%; }
             .sub-title { font-size: clamp(14px, 4vw, 18px); }
             .button-container { gap: 20px; margin-top: 20px; }
-            .home-button { padding: 10px 30px; width: 100%; }
+            .home-button { padding: 10px 30px; width: auto; }
         }
     </style>
 </head>
 <body>
     <div class="content-wrapper">
-        <h1 class="main-title">女の子になりたい！</h1>
+        <h1 class="main-title">明かりになったあなたへ</h1>
+        <p class="sub-title">致化作光明の你——シリウスの心臓 (CV: ヰ世界情緒)</p>
+        <br><br><br><br><br><br>
         <div class="subtitle-row">
-            <p class="sub-title">想成为女孩子！！！！！<br><small>##歌曲原唱：Mafumafu | 填词：Mafumafu | 谱曲：Mafumafu、田中秀和（MONACA）<br>https://www.bilibili.com/video/BV1nE41117Gi</small></p>
-            <p class="sub-title"><br>网站简介：</p>
-            <p class="sub-title">15岁168cm可爱小伪娘的个人网站❤️<br>网络服务由Cloudflare提供<br><br>
-            <p class="sub-title">有问题请联系（友链添加）：<br>2031723665@qq.com | Github：https://github.com/TianLSama<br><br><br>*网站暂未适配移动端，移动端用户访问将强制使用桌面端显示比例，可手动缩放进行调整。</small>
-            </p>
+            <p class="sub-title">网站简介：</p>
+            <p class="sub-title">15 岁 168cm 可爱小伪娘的个人网站❤️</p>
+            <p class="sub-title">网络服务均由 Cloudflare 提供</p>
+            <br><br><br><br>
+            <p class="sub-title">有问题请联系（友链添加）：2031723665@qq.com | Github: https://github.com/TianLSama</p>
+            <p class="sub-title" style="font-size: 12px; opacity: 0.8;">*网站暂未完全适配移动端，移动端用户可能遇到显示问题，敬请谅解。</p>
+            
             <div class="button-container">
                 <a href="https://www.tianlsama.org.cn" class="home-button">前往主站</a>
                 <a href="服务状态.html" class="home-button">服务可用性监测</a>
             </div>
         </div>
     </div>
-
-    <footer style="text-align:center; padding:20px 0; font-size:14px; color:#666;">
+    <footer>
         © 2026 TianCLoud. All rights reserved.
     </footer>
-
 </body>
 </html>
